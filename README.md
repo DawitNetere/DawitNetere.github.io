@@ -1,1 +1,1 @@
-# DawitNetere.github.io
+# d-tech-originals.github.io
