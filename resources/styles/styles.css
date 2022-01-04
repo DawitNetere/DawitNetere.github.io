@@ -8,21 +8,21 @@
 body {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: center;
 }
 
+.heading {
+  margin: 2rem 0;
+}
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgb(17, 141, 66);
 }
 p {
   font-size: 1.2em;
 }
 
-.heading {
-  margin: 5rem 0;
-}
 #round {
   width: 30px;
   height: 30px;
@@ -31,18 +31,15 @@ p {
 }
 
 /* navigation section */
-header {
-  max-height: 6.65rem;
+
+nav {
   background-color: #fff;
+  max-height: 4.2rem;
   border-bottom: 2px solid #d8eee1;
   width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 10;
-}
-
-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,7 +50,6 @@ nav #menu-icon {
 }
 nav ul {
   margin-right: 1rem;
-  margin-top: 0.75rem;
 }
 nav ul li {
   list-style: none;
@@ -84,7 +80,8 @@ nav ul li a:hover::after {
 }
 
 .logo {
-  height: 4rem;
+  margin-top: 0.5em;
+  height: 60px;
   width: 200px;
   margin-left: 1rem;
   transition: 0.3s;
@@ -107,9 +104,10 @@ nav ul li a:hover::after {
 
 /* Banner */
 .main {
-  min-height: 44rem;
+  margin-top: 4rem;
+  height: 36rem;
   width: 100%;
-  margin-top: 5.1rem;
+  margin-top: rem;
   background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,16 +124,16 @@ nav ul li a:hover::after {
 }
 
 .main h1 {
-  font-size: 6em;
+  font-size: 4em;
   color: #fff;
 }
 
 .main p {
-  font-size: 1.75em;
+  font-size: 1.4em;
   color: #fff;
   font-weight: 600;
   font-style: italic;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
 }
 
 @media screen and (max-width: 920px) {
@@ -165,17 +163,21 @@ nav ul li a:hover::after {
 /* Services section */
 
 .services {
-  border: 1px solid #fff;
+  height: 36rem;
+  border-top: 1px solid #fff;
   text-align: center;
   max-width: 85%;
   margin: 0 auto;
 }
 
 .container {
-  min-height: 34rem;
+  min-height: 26rem;
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-  gap: 20px;
+  gap: 15px;
+}
+.container h2 {
+  margin-top: 7rem;
 }
 .container h4 {
   font-size: 1.75rem;
@@ -246,22 +248,19 @@ nav ul li a:hover::after {
 
 /* our team section */
 .our-team {
-  border: 1px solid #fff;
+    height: 36rem;
+  border-top: 1px solid #fff;
 }
 .our-team .container {
-  margin: 0.5rem 0;
+  margin: 0 auto;
   width: 100%;
-  height: auto;
+  min-height: 25rem;
   display: grid;
   grid-template: 1fr / repeat(5, 1fr);
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   background-color: #eff8f3;
-}
-
-.our-team img {
-  box-shadow: 1px 6px 6px #b0ddc2;
 }
 
 #ceo {
@@ -280,10 +279,12 @@ nav ul li a:hover::after {
 figcaption {
   font-size: 1.2em;
 }
+
 .our-team img {
-  width: 100%;
-  height: 22rem;
+  width: 90%;
+  height: 18rem;
   border-radius: 2px;
+  box-shadow: 1px 6px 6px #b0ddc2;
 }
 
 @media screen and (max-width: 980px) {
@@ -291,8 +292,8 @@ figcaption {
     display: block;
   }
   .our-team img {
-    width: 60%;
-    height: 30rem;
+    width: 40%;
+    height: 20rem;
     border-radius: 2px;
   }
 }
@@ -303,21 +304,20 @@ figcaption {
   }
   .our-team img {
     width: 50%;
-    height: 20rem;
+    height: 15rem;
     border-radius: 2px;
   }
 }
 
 /* contact us section */
 .contacts {
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+  border: 1px solid #fff;
+  height: 32rem;
+  margin: 1rem 0;
 }
-.contacts .heading {
-  margin: 2rem;
-}
+
 .maps {
-  min-height: 20rem;
+  height: 15rem;
   width: 25rem;
   overflow: hidden;
   margin: 0 auto;
@@ -330,13 +330,13 @@ figcaption {
 /* footer section */
 
 footer .content {
-  padding: 2rem;
+  padding: 1rem;
   background-color: #46a46c;
-  min-height: 5rem;
+  height: 4rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #fff;
 }
 
