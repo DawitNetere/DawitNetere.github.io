@@ -91,41 +91,42 @@ nav ul li a:hover::after {
 
   nav #menu-icon {
     display: inline-block;
-    margin-right: .3rem;
+    margin-right: 0.3rem;
   }
-  
+
   .logo {
     width: 150px;
   }
 }
 
 /* Banner */
-.main {
+.banner {
   margin-top: 4rem;
   min-height: 36rem;
   width: 100%;
-  margin-top: rem;
   background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
+  align-items: center;
+}
+
+.banner .content {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.content {
   width: 100%;
   background-color: #79c698;
 }
 
-.main h1 {
+.banner h1 {
   font-size: 4em;
   color: #fff;
 }
 
-.main p {
+.banner p {
   font-size: 1.4em;
   color: #fff;
   font-weight: 600;
@@ -133,30 +134,13 @@ nav ul li a:hover::after {
   margin-bottom: 1.3rem;
 }
 
-@media screen and (max-width: 920px) {
-  .main h1 {
-    font-size: 5rem;
+@media screen and (max-width: 780px) {
+  .banner h1 {
+    font-size: 2.5em;
   }
-  .main p {
-    font-size: 1.5rem;
-  }
-}
 
-@media screen and (max-width: 620px) {
-  .main h1 {
-    font-size: 3.5rem;
-  }
-  .main p {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .main {
-    text-align: center;
-  }
-  .main h1 {
-    font-size: 2.5rem;
+  .banner p {
+    font-size: 1em;
   }
 }
 
@@ -224,7 +208,7 @@ nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 980px) {
-  .container {
+  .services .container {
     display: block;
   }
   .sales,
@@ -287,7 +271,7 @@ figcaption {
 
 @media screen and (max-width: 680px) {
   .our-team .container {
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     display: block;
   }
   .our-team img {
@@ -301,14 +285,14 @@ figcaption {
 .contacts {
   border: 1px solid #fff;
   height: 32rem;
-  margin: 1.75rem 0;
+  margin: 2rem 0;
 }
 
 .contacts .heading {
   margin: 2rem;
 }
 .maps {
-  min-height: 15rem;
+  max-height: 15rem;
   width: 25rem;
   overflow: hidden;
   margin: 0 auto;
@@ -335,15 +319,20 @@ footer .content {
 }
 
 @media screen and (max-width: 760px) {
-  .content {
+  .contacts {
+    min-height: 28rem;
+  }
+
+  footer .content {
+    padding: 1rem;
     flex-direction: column;
     height: 4rem;
-    font-size: .85em;
+    font-size: 1em;
   }
-    .contacts h2 {
-    font-size: 1.6rem;
+  .contacts h2 {
+    font-size: 2.2rem;
   }
-    .maps {
-    width: 17em;
+  .maps {
+    width: 20rem;
   }
 }
