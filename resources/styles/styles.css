@@ -335,8 +335,10 @@ footer .content {
 }
 
 @media screen and (max-width: 760px) {
-  .content .location {
-    display: none;
+  .content {
+    flex-direction: column;
+    height: 4rem;
+    font-size: .85em;
   }
     .contacts h2 {
     font-size: 1.5rem;
