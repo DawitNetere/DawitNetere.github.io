@@ -23,13 +23,6 @@ p {
   font-size: 1.2em;
 }
 
-#round {
-  width: 30px;
-  height: 30px;
-  display: inline;
-  transform: translateY();
-}
-
 /* navigation section */
 
 nav {
@@ -98,7 +91,11 @@ nav ul li a:hover::after {
 
   nav #menu-icon {
     display: inline-block;
-    margin: auto 1rem;
+    margin-left: 1.5rem;
+  }
+  
+  .logo {
+    width: 150px;
   }
 }
 
@@ -290,10 +287,11 @@ figcaption {
 
 @media screen and (max-width: 680px) {
   .our-team .container {
+    padding: 0 .5rem;
     display: block;
   }
   .our-team img {
-    width: 50%;
+    width: 60%;
     height: 15rem;
     border-radius: 2px;
   }
@@ -339,5 +337,8 @@ footer .content {
 @media screen and (max-width: 760px) {
   .content .location {
     display: none;
+  }
+    .contacts h2 {
+    font-size: 1.5rem;
   }
 }
