@@ -259,6 +259,9 @@ figcaption {
 }
 
 @media screen and (max-width: 980px) {
+  .our-team figure {
+    margin: 1rem 0;
+  }
   .our-team .container {
     display: block;
   }
