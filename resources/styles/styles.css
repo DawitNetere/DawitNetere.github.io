@@ -91,7 +91,7 @@ nav ul li a:hover::after {
 
   nav #menu-icon {
     display: inline-block;
-    margin-left: 1.5rem;
+    margin-right: .3rem;
   }
   
   .logo {
@@ -340,5 +340,8 @@ footer .content {
   }
     .contacts h2 {
     font-size: 1.5rem;
+  }
+    .maps {
+    width: 15rem;
   }
 }
