@@ -340,7 +340,6 @@ footer .content {
   footer .content {
     padding: 1rem;
     flex-direction: column;
-    height: 4rem;
     font-size: 1em;
   }
 
