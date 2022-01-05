@@ -75,7 +75,7 @@ nav ul li a:hover::after {
 .logo {
   margin-top: 0.5em;
   height: 60px;
-  width: 170px;
+  width:1900px;
   margin-left: 1rem;
   transition: 0.3s;
 }
