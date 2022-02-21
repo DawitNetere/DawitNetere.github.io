@@ -1,0 +1,359 @@
+/* Universal styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.heading {
+  margin: 3.5rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: rgb(17, 141, 66);
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* navigation section */
+
+nav {
+  background-color: #fff;
+  border-bottom: 2px solid #d8eee1;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav #menu-icon {
+  display: none;
+}
+
+nav ul {
+  margin-right: 1rem;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.75rem;
+  margin: 0 0.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.75em;
+  color: #000;
+  font-weight: 500;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: " ";
+  background: rgb(17, 141, 66);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 0;
+}
+
+.logo {
+  margin-top: 0.5em;
+  height: 3.5em;
+  width: 100%;
+  margin-left: 1rem;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+  nav ul {
+    display: none;
+  }
+
+  nav #menu-icon {
+    display: inline-block;
+    margin-right: 0.3rem;
+  }
+
+  .logo {
+    width: 100%;
+  }
+}
+
+/* Banner */
+
+.banner {
+  position: relative;
+  top: 4rem;
+  min-height: 36rem;
+  width: 100%;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.banner .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #79c698;
+}
+
+.banner h1 {
+  font-size: 4em;
+  color: #fff;
+}
+
+.banner p {
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1.3rem;
+}
+
+@media screen and (max-width: 780px) {
+  .banner h1 {
+    font-size: 2.5em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+}
+
+/* Services section */
+
+.services {
+  border-top: 1px solid #fff;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  min-height: 26rem;
+  display: grid;
+  grid-template-areas:
+  'sales import import'
+  'supply supply repair';
+  gap: 15px;
+}
+
+.container h2 {
+  margin-top: 7rem;
+}
+
+.container h4 {
+  font-size: 1.5em;
+  color: #46a46c;
+  background-color: #f7f7f8;
+  padding: 0.3rem;
+  border-radius: 3px;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.container h4:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #79c698;
+  transform: scale(1.1);
+}
+
+.box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sales {
+  grid-area: sales;
+  background-image: url(../images/sales.jpg);
+}
+
+.import {
+  grid-area: import;
+  background-image: url(../images/Import.jpg);
+}
+.supply {
+  grid-area: supply;
+  background-image: url(../images/supply.jpg);
+}
+
+.repair {
+  grid-area: repair;
+  background-image: url(../images/repair.jpg);
+}
+
+@media screen and (max-width: 980px) {
+  .services .container {
+    display: block;
+  }
+
+  .box {
+    min-height: 28rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .box {
+    min-height: 20rem;
+  }
+}
+
+/* our team section */
+
+.our-team {
+  min-height: 36rem;
+  border-top: 1px solid #fff;
+}
+
+.our-team .container {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template: 1fr / repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #eff8f3;
+}
+
+figcaption {
+  font-size: 1.2em;
+}
+
+.our-team img {
+  width: 90%;
+  height: 18rem;
+  border-radius: 2px;
+  box-shadow: 1px 6px 6px #b0ddc2;
+}
+
+@media screen and (max-width: 980px) {
+  .our-team figure {
+    margin: 1rem 0;
+  }
+
+  .our-team .container {
+    padding: 0 0.5rem;
+    display: block;
+  }
+
+  .our-team img {
+    width: 40%;
+    height: 20rem;
+    border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .our-team .container {
+    padding: 0 0.5rem;
+    display: block;
+  }
+
+  .our-team img {
+    width: 60%;
+    height: 15rem;
+    border-radius: 2px;
+  }
+}
+
+/* contact us section */
+
+.contacts {
+  border: 1px solid #fff;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.contacts .heading {
+  margin: 2rem;
+}
+
+.maps {
+  max-height: 15rem;
+  width: 25rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.maps img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* footer section */
+
+footer .content {
+  padding: 1rem;
+  background-color: #46a46c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+#heart {
+  color: red;
+}
+
+@media screen and (max-width: 760px) {
+  .contacts {
+    min-height: 28rem;
+  }
+
+  footer .content {
+    padding: 1rem;
+    flex-direction: column;
+    font-size: 1em;
+  }
+
+  .contacts h2 {
+    font-size: 2.2rem;
+  }
+
+  .maps {
+    width: 20rem;
+  }
+}
