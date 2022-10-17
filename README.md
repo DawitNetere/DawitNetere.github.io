@@ -1,1 +1,1 @@
-# d-tech-originals.github.io
+# dtechoriginals.github.io
